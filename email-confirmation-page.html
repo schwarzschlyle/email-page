@@ -4,74 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verify Your Email - Bonsai</title>
-</head>
-<body style="margin: 0; padding: 20px; background-color: #041b31; font-family: Helvetica, Arial, sans-serif;">
-    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto;">
-        <tr>
-            <td style="background-color: white; border-radius: 12px; padding: 32px;">
-                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #041b31;
+            font-family: Helvetica, Arial, sans-serif;
+        }
 
-                    <!-- header logo (Not sure if 9AI or new Bonsai branding logo)-->
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .content-wrapper {
+            background-color: white;
+            border-radius: 12px;
+            padding: 32px;
+        }
+
+        .header-logo {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            padding: 10px 0;
+        }
+
+        .page-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 16px 0;
+            color: #000000;
+            padding: 16px 0;
+        }
+
+        .welcome-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            padding: 16px 0;
+        }
+
+        .message-container {
+            padding: 20px 0;
+        }
+
+        .greeting {
+            font-size: 19px;
+            font-weight: bold;
+            margin: 0 0 16px 0;
+        }
+
+        .message-text {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+
+        .button-container {
+            padding: 24px 0;
+            text-align: center;
+        }
+
+        .verify-button {
+            background-color: #053396;
+            color: white;
+            text-decoration: none;
+            padding: 16px 48px;
+            border-radius: 6px;
+            font-size: 14px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #e0e0e0;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            color: #666666;
+            margin: 0;
+        }
+
+        .support-link {
+            color: #053396;
+            text-decoration: none;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding="0" cellspacing="0" border="0" class="email-container">
+        <tr>
+            <td class="content-wrapper">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <!-- Header logo -->
                     <tr>
-                        <td align="center" style="padding: 10px 0;">
-                            <img src="https://raw.githubusercontent.com/schwarzschlyle/email-page/master/9ai_logo.png" alt="9ai Logo" style="width: 100%; max-width: 150px; height: auto;">
+                        <td class="text-center">
+                            <img src="https://raw.githubusercontent.com/schwarzschlyle/email-page/master/9ai_logo.png" alt="9ai Logo" class="header-logo">
                         </td>
                     </tr>
                     
-                    <!-- Title -->
+                    <!-- Ttitle -->
                     <tr>
-                        <td align="center" style="padding: 16px 0;">
-                            <h1 style="font-size: 24px; font-weight: bold; margin: 16px 0; color: #000000;">Confirm Your Email</h1>
+                        <td class="text-center">
+                            <h1 class="page-title">Confirm Your Email</h1>
                         </td>
                     </tr>
                     
                     <!-- ESG Image -->
                     <tr>
-                        <td align="center" style="padding: 16px 0;">
-                            <img src="https://raw.githubusercontent.com/schwarzschlyle/email-page/master/esg_image.png" alt="Welcome Image" style="width: 100%; max-width: 500px; height: auto;">
+                        <td class="text-center">
+                            <img src="https://raw.githubusercontent.com/schwarzschlyle/email-page/master/esg_image.png" alt="Welcome Image" class="welcome-image">
                         </td>
                     </tr>
                     
                     <!-- main message -->
                     <tr>
-                        <td style="padding: 20px 0;">
-                            <p style="font-size: 19px; font-weight: bold; margin: 0 0 16px 0;">Hi Chris,</p>
-                            <p style="font-size: 14px; line-height: 1.6; margin: 8px 0;">Welcome to Bonsai, your AI-powered partner for building a smarter, greener future!</p>
-                            <p style="font-size: 14px; line-height: 1.6; margin: 8px 0;">We're excited to have you onboard as you take the first step toward streamlining your ESG journey.</p>
-                            <p style="font-size: 14px; line-height: 1.6; margin: 8px 0;">Before we get started, we just need to verify your email address. It's quick and easy!</p>
+                        <td class="message-container">
+                            <p class="greeting">Hi Chris,</p>
+                            <p class="message-text">Welcome to Bonsai, your AI-powered partner for building a smarter, greener future!</p>
+                            <p class="message-text">We're excited to have you onboard as you take the first step toward streamlining your ESG journey.</p>
+                            <p class="message-text">Before we get started, we just need to verify your email address. It's quick and easy!</p>
                         </td>
                     </tr>
                     
                     <!-- button -->
                     <tr>
-                        <td align="center" style="padding: 24px 0;">
-                            <a href="email-verified.html" style="background-color: #053396; color: white; text-decoration: none; padding: 16px 48px; border-radius: 6px; font-size: 14px; display: inline-block; font-weight: bold;">VERIFY MY EMAIL</a>
+                        <td class="button-container">
+                            <a href="email-verified.html" class="verify-button">VERIFY MY EMAIL</a>
                         </td>
                     </tr>
                     
                     <!-- post-message -->
                     <tr>
-                        <td style="padding: 0 0 20px 0;">
-                            <p style="font-size: 14px; line-height: 1.6; margin: 8px 0;">This step ensures your account is secure and ready to access the full Bonsai experience.</p>
-                            <p style="font-size: 14px; line-height: 1.6; margin: 8px 0;">If you didn't create an account with Bonsai, please ignore this email.</p>
-                            <p style="font-size: 14px; line-height: 1.6; margin: 8px 0;">Thanks for joining us in driving sustainable change,</p>
-                            <p style="font-size: 19px; font-weight: bold; margin: 16px 0;">The Bonsai Team</p>
+                        <td class="message-container">
+                            <p class="message-text">This step ensures your account is secure and ready to access the full Bonsai experience.</p>
+                            <p class="message-text">If you didn't create an account with Bonsai, please ignore this email.</p>
+                            <p class="message-text">Thanks for joining us in driving sustainable change,</p>
+                            <p class="greeting">The Bonsai Team</p>
                         </td>
                     </tr>
                     
                     <!-- divider -->
                     <tr>
-                        <td style="padding: 20px 0;">
-                            <div style="height: 1px; background-color: #e0e0e0; width: 100%;"></div>
+                        <td>
+                            <div class="divider"></div>
                         </td>
                     </tr>
                     
                     <!-- footer -->
                     <tr>
-                        <td align="center" style="padding: 10px 0;">
-                            <p style="font-size: 14px; color: #666666; margin: 0;">
+                        <td class="footer">
+                            <p class="footer-text">
                                 P.S. Need help? Reach out to us anytime at 
-                                <a href="mailto:support@bonsai.com" style="color: #053396; text-decoration: none;">support@bonsai.com</a>
+                                <a href="mailto:support@bonsai.com" class="support-link">support@bonsai.com</a>
                             </p>
                         </td>
                     </tr>
